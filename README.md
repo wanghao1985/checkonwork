@@ -1,3 +1,7 @@
+使用时请安装xlrd库 
+pip install xlrd即可
+程序基于python3.6开发
+
 # checkonwork
 公司考勤加班管理统计功能
 
@@ -12,3 +16,4 @@
 倒休的不统计。
 
 4、暂时不能将数据直接写入excel，需要手动导入
+
