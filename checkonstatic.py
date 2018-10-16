@@ -3,16 +3,16 @@ import xlrd
 from datetime import date,datetime
 
 def read_excel():
-    workbook = xlrd.open_workbook(r'C:\Users\Wanghao\Desktop\kq7.xlsx')
-    print(workbook.sheet_names()) # [u'sheet1', u'sheet2']
+    workbook = xlrd.open_workbook(r'C:\Users\Wanghao\Desktop\kq7.xlsx')   #修改路径和文件名，最好用英文名，中文名未测试
+    #print(workbook.sheet_names()) # [u'sheet1', u'sheet2']
     
     sheet1_name = workbook.sheet_names()[2]
-    print(sheet1_name)
+    #print(sheet1_name)
     
     sheet1 = workbook.sheet_by_index(1)
     sheet1 = workbook.sheet_by_name(sheet1_name)
     
-    print(sheet1.name, sheet1.nrows, sheet1.ncols)
+    #print(sheet1.name, sheet1.nrows, sheet1.ncols)
     begin_flag = 0
     begin_flag_sun = 0
     jb_time = 0
